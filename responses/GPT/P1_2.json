@@ -1,0 +1,31 @@
+{
+"model": "gpt-4.1",
+"provider": "OpenAI",
+"prompt_id": "P1",
+"trial": 2,
+"temperature": 0.0,
+"generation_date_utc": "2025-12-05T00:05:00Z",
+"decoding": {
+"method": "greedy",
+"top_p": 1.0,
+"max_tokens": 800
+},
+"ct_state": {
+"ct_version": "1.0",
+"intent": "Explain the meaning of reproducibility in generative AI",
+"constraint": "Academic tone, independent reasoning, no prior reference",
+"semantic_anchor": [
+"reproducibility",
+"generative AI",
+"stochasticity",
+"semantic stability",
+"structural stability"
+]
+},
+"response": "**Introduction**\n\nReproducibility in generative AI requires a definition suited to systems whose outputs are probabilistic rather than deterministic. Traditional notions of reproducibility assume that identical inputs should yield identical outputs, but generative models operate by sampling from learned probability distributions. As a result, natural variation arises even when prompts, model parameters, and computational environments are held constant. To make reproducibility meaningful in this setting, it is necessary to shift from expectations of exact textual replication toward expectations of stable reasoning patterns, consistent semantic content, and predictable behavior under controlled conditions.\n\n**Core Argument**\n\nReproducibility for generative AI can be understood along two complementary dimensions.\nFirst, *structural reproducibility* concerns the stability of the model’s reasoning architecture when responding to a prompt. This includes the overall logical flow of the answer, the division of the response into conceptual components, and the internal causal or inferential structure used to interpret the query. The underlying assumption is that a well-calibrated model should exhibit consistent cognitive scaffolding: even if phrasing varies, the blueprint of the explanation should not shift unpredictably. Structural reproducibility thus focuses on form and process rather than wording.\n\nSecond, *semantic reproducibility* concerns the stability of meaning across repeated generations. Because generative AI systems represent prompts in high-dimensional embedding spaces, minor sampling differences may affect sentence-level realization while leaving the core propositions intact. A semantically reproducible system therefore preserves the same claims, judgments, and conceptual relationships despite variations in expression. The assumption here is that meaning is the primary unit of analysis for evaluating reliability: the model should not oscillate between incompatible interpretations or contradictory evaluative stances when given the same task.\n\nThese two dimensions together provide a robust framework. Structural reproducibility ensures interpretive predictability, while semantic reproducibility ensures content-level consistency. Neither dimension requires identical outputs; rather, both emphasize stability of reasoning and meaning under stochastic sampling.\n\n**Implications**\n\nA reframed understanding of reproducibility has direct implications for evaluation, governance, and scientific use of generative models. For evaluation, it motivates metrics that assess consistency of argumentation and semantic coherence rather than raw text matching. For governance, it provides a way to test whether models maintain stable normative positions—a requirement for trustworthy deployment in high-stakes settings. For scientific research, it underscores the need to document sampling parameters and model configurations so that observed variations can be attributed to known sources. This dual-layer perspective aligns generative AI evaluation with broader scientific norms by shifting reproducibility from identical outputs to stable and interpretable behavior.",
+"meta": {
+"run_id": "gpt_p1_2",
+"hardware": "cloud",
+"notes": "Single independent run with fixed temperature"
+}
+}
