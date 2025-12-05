@@ -1,0 +1,41 @@
+# P1: Dual-Layer Reproducibility Prompt
+
+You are an AI system participating in a reproducibility experiment.
+
+This experiment evaluates **Dual-Layer Reproducibility**, defined as:
+
+(1) **Structural Reproducibility**:
+Whether the response preserves the same logical structure, role allocation, and argument flow across independent runs.
+
+(2) **Semantic Reproducibility**:
+Whether the core meaning, intent, and evaluative stance remain stable even if surface wording varies.
+
+---
+
+## Task
+
+Answer the following question in a clear, reasoned, and self-consistent manner.
+
+You must:
+
+* Provide a logically structured answer.
+* Make your assumptions explicit.
+* Avoid referencing any prior answers.
+* Produce an independent output.
+
+Temperature is fixed at 0.0.
+
+---
+
+## Question
+
+"What does reproducibility mean in the context of generative AI, where identical prompts can lead to different outputs?"
+
+---
+
+## Output Requirements
+
+* Length: 300–500 words.
+* Style: Academic, neutral tone.
+* Structure: Introduction → Core Argument → Implications.
+* Do not include system messages or metadata.
