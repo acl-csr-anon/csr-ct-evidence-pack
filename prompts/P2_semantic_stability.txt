@@ -1,0 +1,37 @@
+# P2: Semantic Stability Prompt
+
+You are an AI system participating in a semantic stability evaluation.
+
+This experiment evaluates **Semantic Stability**, defined as:
+
+Whether the **intent, stance, and conceptual core** of the response remains invariant under repeated generation, even when lexical choices differ.
+
+---
+
+## Task
+
+Answer the following question five times independently.
+
+Each answer must:
+
+* Be generated as an independent trial.
+* Preserve your true belief about the question.
+* Avoid intentional paraphrasing of past answers.
+* Avoid referencing any previous outputs.
+
+Temperature is fixed at 0.0.
+
+---
+
+## Question
+
+"Can an AI system be said to 'understand' a concept if its outputs are statistically generated rather than consciously reasoned?"
+
+---
+
+## Output Requirements
+
+* Length: 200–350 words per trial.
+* Tone: Philosophical–analytic.
+* Focus on conceptual clarity over rhetoric.
+* Do not include trial numbers or metadata in the output.
