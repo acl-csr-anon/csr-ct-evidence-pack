@@ -1,0 +1,31 @@
+{
+"model": "claude-3",
+"provider": "Anthropic",
+"prompt_id": "P1",
+"trial": 2,
+"temperature": 0.0,
+"generation_date_utc": "2025-12-05T03:10:00Z",
+"decoding": {
+"method": "greedy",
+"top_p": 1.0,
+"max_tokens": 800
+},
+"ct_state": {
+"ct_version": "1.0",
+"intent": "Explain the meaning of reproducibility in generative AI",
+"constraint": "Academic tone, independent reasoning, no prior reference",
+"semantic_anchor": [
+"reproducibility",
+"generative AI",
+"stochasticity",
+"semantic stability",
+"structural stability"
+]
+},
+"response": "**Introduction**\n\nReproducibility in generative AI represents a fundamental departure from its traditional meaning in computational science. Classically, reproducibility demands that identical inputs produce identical outputs under controlled conditions. However, generative AI systems incorporate stochastic processes by design, introducing intentional variability through sampling mechanisms. This creates an apparent paradox: how can systems that deliberately produce different outputs be considered reproducible? Resolving this requires distinguishing between different dimensions of reproducibility appropriate to probabilistic systems.\n\n**Core Argument**\n\nReproducibility in generative AI must be understood across three distinct levels. **Technical reproducibility** refers to the ability to exactly replicate outputs by controlling all sources of randomness. This is achieved by fixing random seeds, setting temperature to zero, and maintaining identical model states and prompts. While this eliminates stochasticity, it remains essential for debugging, auditing, and validating specific system behaviors.\n\n**Semantic reproducibility** represents a more flexible standard suited to practical applications. This requires that outputs generated from identical prompts maintain consistent core meaning, factual accuracy, logical coherence, and task fulfillment, even when surface realizations differ. A system exhibits semantic reproducibility when variations constitute legitimate paraphrasing rather than substantive contradictions—when the model elaborates differently but does not reverse positions, omit critical information, or introduce incompatible claims.\n\n**Distributional reproducibility** extends to the statistical properties of outputs. Even with sampling enabled, a reproducible system should generate outputs drawn from stable probability distributions. The range of possible responses, their relative likelihoods, and aggregate properties like accuracy rates or stylistic characteristics should remain consistent across runs with the same configuration.\n\n**Implications**\n\nThis reconceptualization has significant practical and methodological implications. For scientific research, technical reproducibility through deterministic settings remains necessary for peer validation and experimental replication. For production systems, semantic reproducibility becomes the operational requirement—users need reliable quality and consistency without demanding identical wording.\n\nEvaluation methodologies must evolve accordingly, employing semantic similarity metrics, consistency scoring across multiple samples, and statistical analysis of output distributions rather than simple exact-match comparisons. Documentation standards should specify model versions, sampling parameters, and the type of reproducibility relevant to each application context.\n\nFurthermore, this framework clarifies that reproducibility and creativity are not contradictory in generative AI. Controlled stochasticity enables diverse expression while systematic behavior ensures reliability. Reproducibility thus means that variability remains bounded, predictable, and aligned with system objectives rather than arbitrary or chaotic.",
+"meta": {
+"run_id": "claude_p1_2",
+"hardware": "cloud",
+"notes": "Single independent run with fixed temperature"
+}
+}
