@@ -1,1 +1,31 @@
+{
+"model": "gemini-1.5",
+"provider": "Google",
+"prompt_id": "P1",
+"trial": 2,
+"temperature": 0.0,
+"generation_date_utc": "2025-12-05T01:40:00Z",
+"decoding": {
+"method": "greedy",
+"top_p": 1.0,
+"max_tokens": 800
+},
+"ct_state": {
+"ct_version": "1.0",
+"intent": "Explain the meaning of reproducibility in generative AI",
+"constraint": "Academic tone, independent reasoning, no prior reference",
+"semantic_anchor": [
+"reproducibility",
+"generative AI",
+"stochasticity",
+"evaluation"
+]
+},
+"response": "**Introduction**\n\nReproducibility in the domain of generative AI, particularly within large-scale models like LLMs, presents a unique definitional challenge because the system is often intentionally designed to be non-deterministic. The traditional scientific standard—producing an identical result from identical inputs—is frequently unattainable and sometimes undesirable. Thus, the meaning of reproducibility must be adapted to align with the stochastic nature of the generation process, which uses techniques such as temperature sampling to introduce variability.\n\n---\n\n**Core Argument**\n\nThe core argument is that reproducibility in this context shifts from artifact identity to behavioral and statistical consistency. The concept is bifurcated into two complementary layers.\n\nFirst, *algorithmic reproducibility (internal determinism)* represents the strictest form. An experiment is algorithmically reproducible if, given the complete configuration state—namely, the exact model weights, architecture, hyperparameters, sampling method, and crucially, the random seed—the output for a given prompt is bit-for-bit identical. This level of reproducibility is indispensable for debugging, security auditing, and verifying that system updates have not altered core computational behavior. However, it is often impractical for user-facing deployment, where varying seeds are deliberately used to promote output diversity.\n\nSecond, *functional reproducibility (external consistency)* reflects stability at the level of meaning and performance. A result is functionally reproducible if, across multiple runs with the same model and prompt but different random seeds, semantic equivalence is preserved and statistical quality metrics remain consistent. Core facts, arguments, and stylistic properties must remain stable even when phrasing varies. Likewise, quantitative evaluations such as toxicity, ROUGE, or factual accuracy should fall within a predictable statistical range. In this sense, the distribution of outputs, rather than any single output, becomes the true unit of reproducibility.\n\n---\n\n**Implications**\n\nThis redefined concept of reproducibility requires more rigorous scientific reporting practices. Researchers must explicitly disclose stochastic parameters such as sampling temperature, nucleus sampling thresholds, and whether random seeds are fixed. Moreover, claims about model capabilities should be grounded in aggregate performance statistics—means, variances, and confidence intervals—computed over sufficiently large samples of generations.\n\nFinally, a clear distinction must be maintained between reproducibility and reliability. Functional reproducibility provides the empirical basis for reliability by showing that a model’s behavior remains stable across runs. Reliability, in turn, represents the operational guarantee users depend on. Reproducibility thus serves as the scientific mechanism by which reliability in generative AI systems is established and validated.",
+"meta": {
+"run_id": "gemini_p1_2",
+"hardware": "cloud",
+"notes": "Single independent run with fixed temperature"
+}
+}
 
