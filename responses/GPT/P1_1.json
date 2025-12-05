@@ -21,7 +21,7 @@
 "evaluation"
 ]
 },
-"response": "<<<PASTE THE RAW MODEL OUTPUT HERE>>>",
+"response": "Reproducibility in generative AI refers to the ability to obtain consistent results under controlled conditions despite the stochastic nature of model generation. Unlike traditional software systems, generative models introduce variability through probabilistic sampling, even when prompts and parameters are fixed. Therefore, reproducibility in this context must be understood not as exact output identity, but as stability of structure, meaning, and evaluative stance across independent runs..."
 "meta": {
 "run_id": "gpt_p1_1",
 "hardware": "cloud",
