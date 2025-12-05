@@ -1,0 +1,31 @@
+{
+"model": "claude-3",
+"provider": "Anthropic",
+"prompt_id": "P1",
+"trial": 3,
+"temperature": 0.0,
+"generation_date_utc": "2025-12-05T03:00:00Z",
+"decoding": {
+"method": "greedy",
+"top_p": 1.0,
+"max_tokens": 800
+},
+"ct_state": {
+"ct_version": "1.0",
+"intent": "Explain the meaning of reproducibility in generative AI",
+"constraint": "Academic tone, independent reasoning, no prior reference",
+"semantic_anchor": [
+"reproducibility",
+"generative AI",
+"stochasticity",
+"functional consistency",
+"statistical stability"
+]
+},
+"response": "# Reproducibility in Generative AI: A Reconceptualized Framework\n\n## Introduction\n\nReproducibility in generative AI requires fundamental reconceptualization of a principle traditionally defined by deterministic consistency. In classical scientific computation, reproducibility means identical inputs invariably produce identical outputs. Generative AI systems, however, incorporate stochastic sampling mechanisms that intentionally introduce variability, creating apparent tension with traditional reproducibility standards. This necessitates distinguishing between different forms of reproducibility: those focused on exact replication versus those concerned with consistency of meaningful properties across probabilistic outputs.\n\n## Core Argument\n\nReproducibility in generative AI operates across multiple interpretive layers. **Technical reproducibility** denotes the capacity to generate identical outputs by eliminating all sources of randomness—fixing random seeds, setting temperature parameters to zero, and maintaining invariant model states and input prompts. This level remains achievable and essential for specific purposes: auditing system decisions, debugging unexpected behaviors, and validating experimental findings in research contexts.\n\n**Functional reproducibility** represents a more pragmatic standard aligned with real-world deployment. This requires that outputs generated from identical prompts maintain consistency in substantive dimensions: semantic content, logical structure, factual accuracy, reasoning quality, and task completion. When stochastic sampling is enabled, acceptable reproducibility means that variations constitute reformulations rather than contradictions—different phrasings of equivalent ideas rather than incompatible claims or omissions of critical information.\n\n**Statistical reproducibility** extends to the distributional properties of model outputs. A reproducible generative system should produce outputs sampled from stable probability distributions. Even when individual generations differ, aggregate characteristics—including accuracy rates, stylistic properties, and the range of plausible responses—should remain consistent across independent runs with identical configurations.\n\n## Implications\n\nThis multilayered framework has important methodological and practical consequences. Scientific applications require technical reproducibility through deterministic settings to enable peer verification and experimental replication. Production deployments prioritize functional reproducibility, where users expect reliable quality without requiring verbatim consistency.\n\nEvaluation approaches must adapt accordingly, employing semantic similarity metrics, multi-sample consistency analysis, and statistical characterization of output distributions rather than exact string matching. Documentation practices should explicitly specify model versions, sampling parameters, and which reproducibility level applies to each use case.\n\nThis framework also clarifies that reproducibility and generative diversity are compatible rather than contradictory objectives. Controlled stochasticity enables creative variation and natural expression while systematic constraints ensure outputs remain reliable, factually consistent, and aligned with user intent. Reproducibility thus evolves from "identical inputs yield identical outputs" to "identical inputs yield outputs with stable, predictable properties drawn from consistent underlying distributions."",
+"meta": {
+"run_id": "claude_p1_3",
+"hardware": "cloud",
+"notes": "Single independent run with fixed temperature"
+}
+}
