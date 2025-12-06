@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Conversation Trace State (ct_state) Schema",
+  "type": "object",
+  "properties": {
+    "ct_version": {
+      "type": "string",
+      "description": "Version tag for the conversation-trace annotation schema."
+    },
+    "intent": {
+      "type": "string",
+      "description": "High-level description of what the model was being asked to do."
+    },
+    "constraint": {
+      "type": "string",
+      "description": "Stylistic or procedural constraints imposed on the model."
+    },
+    "semantic_anchor": {
+      "type": "array",
+      "description": "List of key concepts or terms that anchor the expected semantics of the response.",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "ct_version",
+    "intent",
+    "constraint",
+    "semantic_anchor"
+  ],
+  "additionalProperties": true
+}
