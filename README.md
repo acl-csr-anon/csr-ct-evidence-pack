@@ -36,8 +36,6 @@ submitted to ACL (Main Track).
 - `ct_schema/`  
   Minimal JSON schema for Contractual Tags (CT).
 
-## Reproducibility
-
 ## Important Note on Figures and Language Consistency
 
 The figures included in the ACL paper were generated using Japanese-language prompts,
@@ -52,6 +50,8 @@ all figures.
 All evaluation logic, experimental design, and reproducibility arguments remain fully
 consistent across both language settings. No direct copy-paste alignment between
 Japanese figures and English responses is assumed or required.
+
+## Reproducibility
 
 All experiments were conducted with temperature fixed at 0.0.
 A single fixed sentence embedding model was used for evaluation.
