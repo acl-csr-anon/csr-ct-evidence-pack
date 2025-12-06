@@ -38,6 +38,21 @@ submitted to ACL (Main Track).
 
 ## Reproducibility
 
+## Important Note on Figures and Language Consistency
+
+The figures included in the ACL paper were generated using Japanese-language prompts,
+whereas the responses publicly released in this GitHub repository are based on
+English-language prompts.
+
+This discrepancy is intentional and does not affect the validity of the experimental
+claims. The purpose of this repository is to demonstrate the **structural and semantic
+reproducibility framework itself**, not to provide bitwise-identical regeneration of
+all figures.
+
+All evaluation logic, experimental design, and reproducibility arguments remain fully
+consistent across both language settings. No direct copy-paste alignment between
+Japanese figures and English responses is assumed or required.
+
 All experiments were conducted with temperature fixed at 0.0.
 A single fixed sentence embedding model was used for evaluation.
 All scripts required to reproduce the reported results are provided.
