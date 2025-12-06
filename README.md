@@ -36,6 +36,30 @@ submitted to ACL (Main Track).
 - `ct_schema/`  
   Minimal JSON schema for Contractual Tags (CT).
 
+## Evaluation Metrics (Formally Adopted)
+
+This repository formally adopts the following five quantitative metrics as the official evaluation framework
+for Cross-System Reproducibility and Semantic Stability:
+
+1. **Cross-System Reproducibility (CSR / R)**  
+   Measures semantic consistency across different model families (GPT, Gemini, Claude)
+   under identical prompts.
+
+2. **Cognitive Entropy Index (CEI)**  
+   Quantifies the dispersion of semantic representations across repeated generations.
+
+3. **Semantic Variance Factor (SVF)**  
+   Captures intra-model semantic fluctuation under fixed decoding conditions.
+
+4. **Resonance Stability (RS)**  
+   Evaluates structural and logical alignment stability across trials.
+
+5. **Phase Coherence Score (PCS)**  
+   Measures cross-output coherence in conceptual phase space.
+
+These five metrics are treated as the **official quantitative foundation** of the CSR–CT framework
+and are referenced consistently throughout the paper.
+
 ## Important Note on Figures and Language Consistency
 
 The figures included in the ACL paper were generated using Japanese-language prompts,
