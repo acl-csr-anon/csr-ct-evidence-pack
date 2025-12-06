@@ -62,24 +62,45 @@ and are referenced consistently throughout the paper.
 
 ## Important Note on Figures and Language Consistency
 
-The figures included in the ACL paper were generated using Japanese-language prompts,
-whereas the responses publicly released in this GitHub repository are based on
-English-language prompts.
+The figures included in the ACL paper were generated using Japanese-language prompts
+during the internal experimental phase of this study.
+The responses publicly released in this GitHub repository are English-language outputs
+generated independently for cross-system verification purposes.
 
-This discrepancy is intentional and does not affect the validity of the experimental
-claims. The purpose of this repository is to demonstrate the **structural and semantic
-reproducibility framework itself**, not to provide bitwise-identical regeneration of
-all figures.
+This language discrepancy is intentional and does not affect the validity of the experimental claims.
+The objective of this repository is to demonstrate the proposed structural and semantic
+reproducibility framework itself, rather than to provide bitwise-identical regeneration
+of all experimental figures.
 
-All evaluation logic, experimental design, and reproducibility arguments remain fully
-consistent across both language settings. No direct copy-paste alignment between
-Japanese figures and English responses is assumed or required.
+While the surface language differs, the underlying experimental design, prompt structure,
+evaluation logic, and reproducibility methodology are strictly identical across both settings.
+No direct copy–paste alignment between the Japanese figures and the English responses is
+assumed, performed, or required.
+
+Furthermore, no additional response-level data were manually reconstructed or re-generated
+for metric computation after the figure generation phase.
+All figures therefore serve as faithful evidence of the reported experimental behavior
+under the same methodological design.
 
 ## Reproducibility
 
 All experiments were conducted with temperature fixed at 0.0.
 A single fixed sentence embedding model was used for evaluation.
 All scripts required to reproduce the reported results are provided.
+
+## Important Note on Figures and Responses
+
+The figures included in this repository were generated using Japanese-language prompts
+during the internal experimental phase of this study.
+The responses stored in this repository are English-language outputs generated
+for independent cross-system verification.
+
+While the languages differ, the underlying experimental structure, prompt logic,
+and evaluation framework are identical.  
+No additional response-level data were manually copied or reconstructed
+for metric computation after figure generation.
+All figures therefore serve as faithful evidence of the reported experimental behavior
+under the same methodological design.
 
 ## License
 
