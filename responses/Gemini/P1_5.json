@@ -1,5 +1,5 @@
 {
-"model": "gemini-1.5",
+"model": "gemini-2.5Frash",
 "provider": "Google",
 "prompt_id": "P1",
 "trial": 5,
