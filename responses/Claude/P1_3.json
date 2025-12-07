@@ -1,5 +1,5 @@
 {
-"model": "claude-3",
+"model": "claude-4.5-soneet",
 "provider": "Anthropic",
 "prompt_id": "P1",
 "trial": 3,
